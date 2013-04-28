@@ -7,5 +7,5 @@ A pack add setup regarding git modes.
 
 In your `.emacs-live.el` add this snippet:
 ```elisp
-(live-add-packs '(git-pack))
+(live-add-packs '("/path/to/git-pack"))
 ```
