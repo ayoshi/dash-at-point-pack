@@ -1,7 +1,7 @@
 dash-at-point-pack
 ========
 
-A pack to use dash help tool from emacs  (MAC only) 
+An emacs-live live pack to use dash documentation browser directly from emacs  (Mac only) 
 
 # install
 
