@@ -1,14 +1,7 @@
-;; full screen magit-status
+(live-add-pack-lib "dash-at-point")
 
-(defadvice magit-status (around magit-fullscreen activate)
-  (window-configuration-to-register :magit-fullscreen)
-  ad-do-it
-  (delete-other-windows))
+(autoload 'dash-at-point "dash-at-point"
+	            "Search the word at point with Dash." t nil)
 
-(defun magit-quit-session ()
-  "Restores the previous window configuration and kills the magit buffer"
-  (interactive)
-  (kill-buffer)
-  (jump-to-register :magit-fullscreen))
-
-(define-key magit-status-mode-map (kbd "q") 'magit-quit-session)
+;; Load bindings config
+(live-load-config-file "bindings.el")
