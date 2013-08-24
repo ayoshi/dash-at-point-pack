@@ -5,3 +5,6 @@
 
 ;; Load bindings config
 (live-load-config-file "bindings.el")
+
+;; Use python2 instead of python3
+(add-to-list 'dash-at-point-mode-alist '(python-mode . "python2"))
